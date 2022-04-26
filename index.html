@@ -23,8 +23,38 @@
 								<h1>The Spark Challenge</h1>
 								<h2>Spring 2022</h2>
 								<p>Bill and Shirley Rice Design Studio – April 29, 2022 / 11AM - 6PM EST</p>
-								<h3></h3>
-								<h3 style="color:red;">"!!Video Submissions are due at 11.59 PM Tonight!!"</h3>
+								<h3 style="color:red;", id="demo"></h3>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("April 26, 2022 17:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML =  "Grace Period for Late Video Submissions Will End In " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 							</div>
 						</div>
 						
@@ -33,7 +63,7 @@
 								<li><a href="#about">About and Awards</a></li>
 								<!-- <li><a href="#awards">Awards</a></li> -->
 								<li><a href="#videos">Upload Team Videos</a></li>
-								<li><a href="#apply">Apply To Participate</a></li>
+								<li><a href="#apply">Watch Project Videos</a></li>
 								
 								<li><a href="#contact">Contact Form</a></li>
 								<li><a href="#directions">Dates, FAQ and Schedule</a></li>
@@ -48,12 +78,9 @@
 
 						<!-- Work -->
 							<article id="apply">
-								<h2 class="major">Applications are now Closed!</h2>
-
-								<h3>Thank you for your interest in The Spark Challenge Spring 2022</h3>
-								<h3>Team applications ended on April 24th 11.59 PM</h3>
-								<h3>If you need to make any changes to your existing application please use the contact form to reach out to us!</h3>
-								<h3>Looking forward to see you at MSEE Rice Design Studio This Friday!</h3>
+								<h2 class="major">Under Construction</h2>
+								<h3>Team Videos For The Spark Challenge Spring 2022 Will be uploaded on</h3>
+								<h3>April 26th 8pm EST</h3>
 								
 							</article> 
 
